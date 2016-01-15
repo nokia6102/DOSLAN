@@ -1,0 +1,24 @@
+[MENU]
+MENUITEM=IPX
+MENUITEM=TCP
+MENUITEM=USB
+MENUDEFAULT=TCP,0
+rem MENUCOLOR=
+
+[COMMON]
+buffers=10,0
+files=40
+stacks=9,256
+
+[IPX]
+devicehigh=c:\msnet\ifshlp.sys
+
+[TCP]
+devicehigh=c:\tcpnet\ifshlp.sys
+
+[USB]
+device=c:\tools\usb\usbaspi.sys
+device=c:\tools\usb\di1000dd.sys
+
+[COMMON]
+lastdrive=g

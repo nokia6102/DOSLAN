@@ -1,0 +1,25 @@
+[network]
+filesharing=no
+printsharing=no
+autologon=no
+reconnect=no
+dospophotkey=N
+lmlogon=0
+preferredredir=basic
+maxconnections=8
+sizworkbuf=1498
+username=here
+workgroup=WORKGROUP
+computername=DOS-PC1
+lanroot=c:\TCPNET
+
+[network drivers]
+LoadRMDrivers=yes
+transport=tcpdrv.dos,nemm.dos,dis_pkt.dos
+devdir=c:\TCPNET
+netcard=rtsnd.dos
+
+[Password Lists]
+*Shares=c:\TCPNET\Shares.PWL
+
+HERE=c:\tcpnet\HERE.PWL

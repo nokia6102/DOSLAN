@@ -1,0 +1,32 @@
+@echo off
+CLS
+choice Do you have CMOS battery 
+if errorlevel 2 goto N 
+if errorlevel 1 goto Y
+
+:Y
+TIME
+DATE
+
+CLS
+echo.
+echo Check time & date is setting?
+echo.
+echo.
+echo.
+echo.
+TIME<ENTER
+echo.
+echo.
+DATE<ENTER
+echo.
+echo.
+echo.
+echo.
+PAUSE
+GOTO END
+
+:N
+GOTO END
+
+:END 
